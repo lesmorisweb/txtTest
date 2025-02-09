@@ -1,0 +1,1 @@
+{"root":["./src/controller/domain/domains.ts","./src/db/conection.ts","./src/middleware/middleware.ts","./src/models/content.ts","./src/models/title.ts","./src/routes/content.routes.ts","./src/routes/generatetxt.routes.ts","./src/routes/index.ts","./src/routes/title.routes.ts"],"errors":true,"version":"5.7.3"}
