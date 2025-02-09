@@ -1,7 +1,7 @@
 import dotenv from "dotenv"
 import { Dialect, Sequelize } from "sequelize";
 
-require("dotenv").config();
+dotenv.config();
 
 console.log("DB Config:");
 console.log(`Host: ${process.env.DB_HOST}`);
@@ -18,7 +18,7 @@ const sequelize= new Sequelize(
     process.env.DB_PASWWORD || "password",
     {
         host: process.env.DB_HOST,
-        dialect: `postgres`,
+        dialect: dbDialect,
         port: Number(process.env.DB_PORT_POSTGRES) || 5435,
         logging: console.log,
     }
